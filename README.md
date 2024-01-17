@@ -21,7 +21,7 @@ docker build -f Dockerfile.prod -t tailwindcss-nike-prod .
 docker run -d -p 8000:80 --name tailwindcss-nike-container tailwindcss-nike-prod  
 
 // for docker compose
-docker-compose -f docker-compose.prod.yml up --build
+docker-compose -f docker-compose.yml up --build
 
 docker image inspect tailwindcss-nike
 
